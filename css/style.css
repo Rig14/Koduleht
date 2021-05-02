@@ -1,6 +1,7 @@
 :root{
     --text-c0: #05f4b7;
     --text-c1: #371bb1;
+    --text-c2: #474747;
     --bg0: #12151f;
     --bg1: #cccccc;
 }
@@ -16,6 +17,9 @@ body{
 }
 ul{
     margin: 0;
+}
+a{
+    text-decoration: none;
 }
 .header-content, .wrapper-content, .footer-content{
     margin-right: auto;
@@ -48,9 +52,10 @@ ul{
 .logo{
     height: 75px;
     transform: translate(0, 7.5%);
-    filter: invert(16%) sepia(99%) saturate(2151%) hue-rotate(244deg) brightness(90%) contrast(120%);
+    filter: invert(82%) sepia(69%) saturate(5001%) hue-rotate(353deg) brightness(94%) contrast(80%);
 }
 .header-items{
+    color: #cfd308;
     height: 75px;
     display: flex;
     font-size: 30pt;
@@ -59,7 +64,7 @@ ul{
 .header-items a{
     font-weight: bold;
     text-decoration: none;
-    color: var(--text-c1);
+    color: var(--text-c2);
     margin-left: auto;
     margin-right: auto;
 }
@@ -100,7 +105,8 @@ ul{
 .text a{
     user-select: none;
     text-decoration: none;
-    font-size: 30pt;
+    color: var(--text-c1);
+    font-size: 15pt;
 }
 .text a:hover{
     transition: 0.2s;
@@ -108,7 +114,6 @@ ul{
 }
 .text p{
     font-size: 16pt;
-    text-align: justify;
 }
 .text h1{
     font-size: 30pt;
@@ -116,6 +121,9 @@ ul{
 @media (max-width: 760px) {
     .text h1{
         font-size: 20pt;
+    }
+    .text p{
+        font-size: 13pt;
     }
 }
 @media (max-width: 520px) {
@@ -140,4 +148,21 @@ footer{
 }
 .footer-text a:hover{
     opacity: 0.6;
+}
+
+
+
+.phone-svg{
+    float: right; 
+    width: 300px;
+}
+@media (max-width: 600px) {
+    .phone-svg{
+        width: 200px;
+    }
+}
+@media (max-width: 500px) {
+    .phone-svg{
+        display: none;
+    }
 }
