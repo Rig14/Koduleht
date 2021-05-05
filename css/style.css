@@ -72,7 +72,6 @@ a{
     color: var(--text-c2);
     margin-left: auto;
     margin-right: auto;
-    min-width: 70px;
 }
 .header-items a:hover{
     color: var(--bg0);
@@ -97,7 +96,6 @@ a{
     }
     .logo{
         height: 45px;
-        margin-right: 10px;
         transform: translate(0, 0%);
     }
     .header{
