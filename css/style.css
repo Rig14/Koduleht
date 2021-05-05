@@ -48,11 +48,13 @@ a{
     height: 75px;
     background-color: var(--bg1);
     user-select: none;
+    font-family:'Source Sans Pro', sans-serif;
 }
 .logo{
-    height: 75px;
+    height: 60px;
     transform: translate(0, 7.5%);
     filter: invert(82%) sepia(69%) saturate(5001%) hue-rotate(353deg) brightness(94%) contrast(80%);
+    user-select: none;
 }
 .header-items{
     color: #cfd308;
@@ -86,8 +88,14 @@ a{
     #logo{
         display: none;
     }
+    .header{
+        height: 50px;
+    }
+    .header-items{
+        height: 50px;
+    }
 }
-@media (max-width: 420px) {
+@media (max-width: 460px) {
     .header-items a{
         font-size: 13pt;
         margin: auto;
@@ -97,7 +105,7 @@ a{
 
 .wrapper{
     min-height: 100vh;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .wrapper-content{
     color: var(--text-c0);
@@ -127,6 +135,25 @@ iframe{
 }
 .lyrics{
     color: var(--bg1);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.lyrics div{
+    margin-top: 20px;
+    border-top: 2px dashed;
+    border-color: rgba(204, 204, 204, .5);
+}
+.lyrics h1{
+    margin-bottom: 0px;
+}
+.lyrics h3{
+    margin: 5px 0px 50px 0px;
+}
+@media (max-width: 1000px) {
+    .lyrics{
+        width: 100%;
+    }
 }
 @media (max-width: 760px) {
     .text h1{
