@@ -256,6 +256,9 @@ div img.pic{
     font-size: 14pt;
     text-decoration: underline;
 }
+.files li{
+    margin: 0 0 7.5px 0;
+}
 .files a:hover{
     opacity: .8;
 }
