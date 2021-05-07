@@ -113,6 +113,7 @@ a{
 
 
 .wrapper{
+    min-height: 100vh;
     margin-top: 50px;
 }
 .wrapper-content{
@@ -216,4 +217,61 @@ div img.pic{
 .pic-grid .pic:hover{
     transition: .2s;
     transform: scale(1.05);
+}
+
+
+.folder-css{
+    height: 50px;
+    filter: invert(37%) sepia(99%) saturate(2784%) hue-rotate(182deg) brightness(91%) contrast(105%);
+}
+.folder-html{
+    height: 50px;
+    filter: invert(50%) sepia(63%) saturate(2092%) hue-rotate(359deg) brightness(97%) contrast(97%);
+}
+.folder-img{
+    height: 50px;
+    filter: invert(40%) sepia(43%) saturate(12292%) hue-rotate(329deg) brightness(97%) contrast(97%);
+}
+.folder-random{
+    height: 50px;
+    filter: invert(40%) sepia(43%) saturate(92%) hue-rotate(329deg) brightness(97%) contrast(97%);
+}
+.folder-root{
+    height: 50px;
+    filter: invert(40%) sepia(43%) saturate(932%) hue-rotate(329deg) brightness(97%) contrast(97%);
+}
+
+.files ul{
+    list-style: none;
+}
+.files p{
+    font-size: 18pt;
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    margin: 0 0 -5px 0;
+}
+.files a{
+    color: var(--text-c0);
+    font-size: 14pt;
+    text-decoration: underline;
+}
+.files a:hover{
+    opacity: .8;
+}
+@media (max-width: 670px) {
+    .files a{
+        font-size: 12pt;
+    }
+    .files p{
+        font-size: 15pt;
+    }
+}
+@media (max-width: 350px) {
+    .files a{
+        font-size: 10pt;
+    }
+    .files p{
+        font-size: 10pt;
+    }
 }
