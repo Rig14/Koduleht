@@ -60,7 +60,6 @@ a{
     display: none;
 }
 .header-items{
-    color: #cfd308;
     height: 75px;
     display: flex;
     font-size: 30pt;
@@ -114,7 +113,6 @@ a{
 
 
 .wrapper{
-    min-height: 100vh;
     margin-top: 50px;
 }
 .wrapper-content{
@@ -147,7 +145,6 @@ iframe{
     color: var(--bg1);
     display: flex;
     flex-direction: column;
-    width: 60%;
 }
 .lyrics div{
     margin-top: 20px;
@@ -159,11 +156,6 @@ iframe{
 }
 .lyrics h3{
     margin: 5px 0px 50px 0px;
-}
-@media (max-width: 1100px) {
-    .lyrics{
-        width: 100%;
-    }
 }
 @media (max-width: 760px) {
     .text h1{
@@ -206,4 +198,22 @@ footer{
     .phone-svg{
         display: none;
     }
+}
+
+.pic-grid{
+    transition: .2s;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+div img.pic{
+    margin: 0;
+    transition: .2s;
+    height: 100%;
+    width: 100%;
+}
+.pic-grid .pic:hover{
+    transition: .2s;
+    transform: scale(1.05);
 }
