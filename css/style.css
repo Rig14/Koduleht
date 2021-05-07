@@ -204,7 +204,7 @@ footer{
 .pic-grid{
     transition: .2s;
     display: grid;
-    gap: 10px;
+    gap:20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -213,10 +213,12 @@ div img.pic{
     transition: .2s;
     height: 100%;
     width: 100%;
+    border-radius: 15px;
 }
 .pic-grid .pic:hover{
     transition: .2s;
-    transform: scale(1.05);
+    transform: scale(1.1);
+    border-radius: 3px;
 }
 
 
