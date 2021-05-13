@@ -243,8 +243,13 @@ div img.pic{
     filter: invert(40%) sepia(43%) saturate(932%) hue-rotate(329deg) brightness(97%) contrast(97%);
 }
 
+
+.files #nodash{
+    border: none;
+}
 .files ul{
     list-style: none;
+    border-left: 2px dashed var(--text-c0);
 }
 .files p{
     font-size: 18pt;
