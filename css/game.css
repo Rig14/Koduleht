@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   font-family: "VT323", monospace;
   justify-content: center;
+  text-decoration: none;
 }
 
 form {
@@ -30,7 +31,15 @@ h1, h3{
 li{
   font-size: 15pt;
 }
-
+#codepen-link{
+  color: var(--text-c1);
+}
+#codepen-link:hover{
+  opacity: .6;
+}
+#codepen-link:visited{
+  color: var(--text-c1);
+}
 .game-display{
   display: flex;
   justify-content: center;
