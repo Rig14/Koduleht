@@ -33,6 +33,7 @@ li{
 }
 #codepen-link{
   color: var(--text-c1);
+  text-decoration: underline;
 }
 #codepen-link:hover{
   opacity: .6;
