@@ -13,7 +13,7 @@ html{
 }
 body{
     margin: 0 auto;
-    font-family: "VT323", monospace;
+    font-family: monospace;
 }
 ul{
     margin: 0;
@@ -131,6 +131,7 @@ a{
 }
 .text p{
     font-size: 12pt;
+    line-height: 25px;
 }
 .text h1{
     font-size: 30pt;
@@ -143,7 +144,7 @@ iframe{
     height: 100%;
 }
 .lyrics{
-    color: var(--bg1);
+    color: white;
     display: flex;
     flex-direction: column;
 }
@@ -157,6 +158,7 @@ iframe{
 }
 .lyrics h3{
     margin: 5px 0px 50px 0px;
+    font-size: 16pt;
 }
 @media (max-width: 760px) {
     .text h1{
@@ -178,6 +180,7 @@ footer{
 }
 .footer-text a{
     text-decoration: none;
+    font-size: 12pt;
     color: var(--text-c1);
 }
 .footer-text a:hover{
